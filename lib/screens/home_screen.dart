@@ -1,4 +1,5 @@
 //import 'package:fl_cmpuno/screens/alert_screen.dart';
+import 'package:fl_cmpuno/router/app_routes.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -19,19 +20,18 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView.separated(
         itemBuilder:(context, index) => ListTile(
-          leading: const Icon(Icons.settings_input_antenna,
-                        color: Colors.indigo,),
-          title: const Text('items de prueba'),
+          leading: Icon(AppRoutes.menuOptions[index].icon),
+          title: Text(AppRoutes.menuOptions[index].name),
           trailing: const Icon(Icons.arrow_circle_down,
                         color: Colors.indigo,),
           onTap: () {
             //final ruta = MaterialPageRoute(builder:(context) => const AlertScreen());
             //Navigator.push(context, ruta);
-            Navigator.pushNamed(context, 'card');
+            Navigator.pushNamed(context, AppRoutes.menuOptions[index].route);
           },
         ),
         separatorBuilder:(context, index) => const Divider(),
-        itemCount: 10),
+        itemCount: AppRoutes.menuOptions.length),
       
     );
   }

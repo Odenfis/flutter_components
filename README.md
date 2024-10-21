@@ -1,12 +1,12 @@
-# fl_cmpuno
+# Proyecto fl_componentes
 
-A new Flutter project.
+Proyecto en clase
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Estimados alumnos, este proyecto será el que trabajaremos hasta final de ciclo, agregando nuevos componentes y widgets que iremos aprendido a lo largo del presente.
 
-A few resources to get you started if this is your first Flutter project:
+Algunos recursos extras para que tú puedas iniciar en la creación de proyectos:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)

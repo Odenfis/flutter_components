@@ -12,10 +12,7 @@ class ListView2Screen extends StatelessWidget {
       appBar: AppBar(
         //backgroundColor: Colors.indigoAccent,
         title: const Text(
-          'ListView Parte 2',
-          style: TextStyle(
-            color: Colors.white
-          ),
+          'ListView Parte 2',          
           ),
       ),
       body: ListView.separated(

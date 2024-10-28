@@ -1,5 +1,6 @@
 //import 'package:fl_cmpuno/screens/alert_screen.dart';
 import 'package:fl_cmpuno/router/app_routes.dart';
+import 'package:fl_cmpuno/themes/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -20,10 +21,13 @@ class HomeScreen extends StatelessWidget {
       ),
       body: ListView.separated(
         itemBuilder:(context, index) => ListTile(
-          leading: Icon(AppRoutes.menuOptions[index].icon),
+          leading: Icon(
+            AppRoutes.menuOptions[index].icon,
+            color: AppTheme.primary,
+            ),
           title: Text(AppRoutes.menuOptions[index].name),
           trailing: const Icon(Icons.arrow_circle_down,
-                        color: Colors.indigo,),
+                        color: AppTheme.primary),
           onTap: () {
             //final ruta = MaterialPageRoute(builder:(context) => const AlertScreen());
             //Navigator.push(context, ruta);

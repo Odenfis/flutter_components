@@ -1,7 +1,6 @@
 import 'package:fl_cmpuno/router/app_routes.dart';
+import 'package:fl_cmpuno/themes/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'screens/screens.dart';
-
 
 void main() => runApp(const MyApp());
 
@@ -17,6 +16,7 @@ class MyApp extends StatelessWidget {
       initialRoute: AppRoutes.initialRoute,
       routes: AppRoutes.getAppRoutes(),
       onGenerateRoute: AppRoutes.onGenerateRoute,
+      theme: AppTheme.lighTheme
     );
   }
 }

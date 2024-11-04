@@ -14,13 +14,10 @@ class CardScreen extends StatelessWidget {
       body: ListView(
         children: const [
           CustomCardType1(),
+          SizedBox(height: 10),
           CustomCardType2(),
-          CustomCardType1(),
-          CustomCardType2(),
-          CustomCardType1(),
-          CustomCardType2(),
-          CustomCardType1(),
-
+          SizedBox(height: 10),
+          CustomCardType3(),    
         ],
       )
     );

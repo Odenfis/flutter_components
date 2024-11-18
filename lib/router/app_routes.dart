@@ -36,7 +36,17 @@ class AppRoutes{
       route: 'prueba', 
       icon: Icons.textsms_sharp, 
       name: 'PruebaScreen', 
-      screen: const PruebaScreen())
+      screen: const PruebaScreen()),
+      MenuOption(
+        route: 'avatar', 
+        icon: Icons.all_inclusive_rounded, 
+        name: 'AvatarScreen', 
+        screen: const AvatarScreen()),
+        MenuOption(
+          route: 'animated', 
+          icon: Icons.camera_alt_rounded, 
+          name: 'AnimatedScreen', 
+          screen: const AnimatedScreen())
   ];
 
   //Recorrido del menú
